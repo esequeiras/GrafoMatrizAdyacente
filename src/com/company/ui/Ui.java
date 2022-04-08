@@ -22,7 +22,7 @@ public class Ui {
                 switch (op){
                     case 1:
                         out.println("Ingrese un numero");
-                        gestor.agregarVertice(Integer.parseInt(in.readLine()));
+                        out.println(gestor.agregarVertice(Integer.parseInt(in.readLine())));
                         break;
                     case 2:
                         out.println(gestor.mostrarVertices());

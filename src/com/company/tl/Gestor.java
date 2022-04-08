@@ -8,12 +8,13 @@ public class Gestor {
     public Gestor() {
         this.grafo = new GrafoMA(8);
     }
-    public void agregarVertice(int num){
+    public String agregarVertice(int num){
         try{
-            grafo.insertVertex(num);
+            return grafo.insertVertex(num);
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
+        return null;
     }
     public void agregarArco(int v1,int v2,int p){
         try{

@@ -24,8 +24,13 @@ public class GrafoMA {
     /**
      * Agregar vértices / nodos
      */
-    public void insertVertex(int vertex){
-        vertexList.add(vertex);
+    public String insertVertex(int vertex){
+        if (vertexList.size()<getVertexListSize()){
+            vertexList.add(vertex);
+            return "vertice Agregado";
+        }
+        return "No se pueden agregar mas vertices";
+
     }
     /**
      * Agregar bordes
@@ -59,7 +64,7 @@ public class GrafoMA {
     }
 
     public int getVertexListSize() {
-        return vertexList.size();
+        return edges.length;
     }
 
 }
