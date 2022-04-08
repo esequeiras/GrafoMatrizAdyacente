@@ -36,7 +36,9 @@ public class Ui {
                     case 3:
                         out.println(gestor.mostrarGrafo());
                         break;
-
+                    case 4:
+                        out.println("Adios");
+                        break;
                     default:
                         out.println("Opcion invalida");
 
@@ -49,6 +51,7 @@ public class Ui {
         out.println("1 Agregar Vertice");
         out.println("2 Agregar Arco");
         out.println("3 Mostrar Grafo");
+        out.println("4 Salir");
         out.print("Ingrese una opcion: ");
     }
 }
