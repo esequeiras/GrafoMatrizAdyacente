@@ -51,7 +51,7 @@ public class GrafoMA {
         for (int[] link : edges){
             mensaje=mensaje+"\n"+Arrays.toString(link);
         }
-        return mensaje;
+        return mensaje+"\n";
     }
     public String showVertex(){
         int i=0;
@@ -65,6 +65,14 @@ public class GrafoMA {
 
     public int getVertexListSize() {
         return edges.length;
+    }
+    public boolean encontrarVertice(int nuevo) {
+        for (Integer num:vertexList) {
+            if(num==nuevo){
+                return true;
+            }
+        }
+        return false;
     }
 
 }

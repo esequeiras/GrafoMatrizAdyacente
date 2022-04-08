@@ -10,6 +10,9 @@ public class Gestor {
     }
     public String agregarVertice(int num){
         try{
+            if (grafo.encontrarVertice(num)){
+                return "El vertice "+num+ " ya se encuentra agregado";
+            }
             return grafo.insertVertex(num);
         }catch (Exception e){
             System.out.println(e.getMessage());
